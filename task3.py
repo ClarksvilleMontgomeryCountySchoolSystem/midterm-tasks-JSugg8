@@ -39,7 +39,7 @@ if not TESTING:
     item, price, quantity = get_purchase_info()
 
 # Calculate using the input values (NOT hardcoded!)
-subtotal= price*quantity
+subtotal = round(price*quantity, 2)
 tax_rate = 0.095 #This is slightly different from the review. The tax multiplier is stored into a variable.
 tax=subtotal*tax_rate
 total=subtotal+tax
